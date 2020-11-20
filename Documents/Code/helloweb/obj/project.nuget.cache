@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "TNB/GE8Liyj4nhxfOujAxx78AS+Eb3gGt8YgpTexPeNwWEg1620DzqVZnbK451J+TmcPtqu5cR5MX/x8r5+21Q==",
+  "success": true,
+  "projectFilePath": "/home/p/Documents/Code/helloweb/helloweb.csproj",
+  "expectedPackageFiles": [
+    "/home/p/.nuget/packages/buildbundlerminifier/3.2.449/buildbundlerminifier.3.2.449.nupkg.sha512"
+  ],
+  "logs": []
+}

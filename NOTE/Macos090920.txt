@@ -1,0 +1,6 @@
+/* --------------------------------------- */
+					SHORTCUTS
+/* --------------------------------------- */
+
+1. Finder
+Cmd + Shift + G: root folder (right click -> root computer)

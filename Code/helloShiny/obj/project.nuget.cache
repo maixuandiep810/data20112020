@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "8m7eEipAN4mmptGJxqMuAmKATTv6HDBYVvKOWQVwz/ZwCKnU6VKgoQUzgGOZwz+iQzu8f1ieXdGq+qyIEV0sLA==",
+  "success": true,
+  "projectFilePath": "/home/p/Documents/Code/helloShiny/helloShiny.csproj",
+  "expectedPackageFiles": [
+    "/home/p/.nuget/packages/microsoft.extensions.dependencyinjection/3.1.5/microsoft.extensions.dependencyinjection.3.1.5.nupkg.sha512",
+    "/home/p/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/3.1.5/microsoft.extensions.dependencyinjection.abstractions.3.1.5.nupkg.sha512",
+    "/home/p/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512",
+    "/home/p/.nuget/packages/shiny.core/1.2.0.1755/shiny.core.1.2.0.1755.nupkg.sha512",
+    "/home/p/.nuget/packages/system.reactive/4.4.1/system.reactive.4.4.1.nupkg.sha512"
+  ],
+  "logs": []
+}

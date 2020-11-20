@@ -1,0 +1,7 @@
+/* --------------------------------------- */
+					TERMINAL
+/* --------------------------------------- */
+1. NonTag
+systemctl status docker
+s
+https://docker-ghichep.readthedocs.io/en/latest/docker-thuchanh-container/

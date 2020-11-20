@@ -1,0 +1,125 @@
+/* --------------------------------------- */
+					CONFIG
+/* --------------------------------------- */
+
+1. ibus
+1.1 Can't connect to iBus
+	ibus-daemon &
+	then
+	ibus restart
+https://tinhte.vn/thread/khong-go-tieng-viet-duoc-tren-ubuntu-18-04lts.2798994/
+https://medium.com/@annguyenhieuduc/s%E1%BB%ADa-l%E1%BB%97i-b%E1%BB%99-g%C3%B5-ti%E1%BA%BFng-vi%E1%BB%87t-tr%C3%AAn-ubuntu-20-04-v%E1%BB%9Bi-ibus-bamboo-ed2fe170b255 
+
+
+
+
+3. conda
+https://stackoverflow.com/questions/18675907/how-to-run-conda
+
+
+4. CẦN XÓA AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+-docker
+mssql image
+docker
+
+5. LibreOffice
+- Tieng Viet ?? chu IN
+
+6. MySQL
+pP@123456789
+
+- https://linuxize.com/post/how-to-install-mysql-on-ubuntu-20-04/
+- https://linuxhint.com/installing_mysql_workbench_ubuntu/
+
+
+/* --------------------------------------- */
+					INSTALLED
+/* --------------------------------------- */
+1. hardinfo
+
+2. Python
+https://www.benhepworth.com/blog/2016/05/18/install-python-to-separate-directory-on-linux-in-5-easy-steps/
+
+
+/* --------------------------------------- */
+					SHELL SCRIPT
+/* --------------------------------------- */'
+1. umount sdb
+https://itfromzero.com/linux/mount-umount-o-cung-hay-thiet-bi-tren-linux.html
+https://www.shellscript.sh/case.html
+
+
+/* --------------------------------------- */
+					TECH
+/* --------------------------------------- */
+1. root
+Root user on Ubuntu in general is locked so no user can login as root thus su is not likely to work. likely = co kha nang
+--> sudo rocky
+--> sudo without pass
+
+
+/* --------------------------------------- */
+					COMMAND
+/* --------------------------------------- */
+
+
+
+2. wifi
+sudo lshw -C network
+iwconfig
+
+
+auto wlx00e02d0b75f6
+iface wlx00e02d0b75f6 inet dhcp
+wireless-essid   wlx00e02d0b75f6
+wireless-key     wlx00e02d0b75f6
+wireless-channel 11
+wireless-mode    managed
+
+
+3. anaconda
+export PATH=/media/rocky/Ffolder/anaconda3/bin:$/media/rocky/Ffolder/Codes
+export PATH=/media/rocky/Ffolder/anaconda3/bin:$PATH
+
+
+
+
+BIN
+
+
+1. Docker
+sudo docker volume create device=/media/rocky/Ffolder/DATA/mssql vmssql
+sudo docker volume create --opt  device=/media/rocky/Ffolder/DATA/mssql --opt type=nfs --opt device=nfs vmssql
+docker volume inspect xxxname
+docker run -e 'ACCEPT_EULA=Y' --name c-mssql -e 'SA_PASSWORD=Sa66668888	' -p 1433:1433 -v vmssql:/var/opt/mssql -d mcr.microsoft.com/mssql/server:2017-latest
+docker run -e 'ACCEPT_EULA=Y' --name c-mssql -e 'SA_PASSWORD=Sa66668888	' -p 1433:1433 -v vmssql:/var/opt/mssql -d mcr.microsoft.com/mssql/server:2017-latest
+docker run -e 'ACCEPT_EULA=Y' --name c-mssql -e 'SA_PASSWORD=Sa66668888	' -p 1433:1433 -v vmssql:/var/opt/mssql -d mcr.microsoft.com/mssql/server
+**** docker run -ti -e 'ACCEPT_EULA=Y' --name c-mssql -e 'SA_PASSWORD=Sa66668888' -p 1433:1433 -d mcr.microsoft.com/mssql/server:2017-latest -v /media/rocky/Ffolder/DATA/mssql
+docker inspect xxxcontainer_id
+docker system df
+docker rm -v container_name
+
+
+2. Docker
+2.1 Move Data
+/media/rocky/NEW VOLUME/Dockerdata
+>> custom : chown -R rocky:rocky "/media/rocky/NEW VOLUME/Dockerdata" || chmod -R g+rw "/media/rocky/NEW VOLUME/Dockerdata"
+>>
+sudo chown -R rocky:rocky "/media/rocky/NEW VOLUME/Dockerdata" "/media/rocky/NEW VOLUME/Dockerdata/*" ??
+sudo chown -R rocky:rocky "/media/rocky/NEW VOLUME/Dockerdata" "/media/rocky/NEW VOLUME/Dockerdata/builder" "/media/rocky/NEW VOLUME/Dockerdata/buildkit" "/media/rocky/NEW VOLUME/Dockerdata/containers" "/media/rocky/NEW VOLUME/Dockerdata/image" "/media/rocky/NEW VOLUME/Dockerdata/network" "/media/rocky/NEW VOLUME/Dockerdata/overlay2" "/media/rocky/NEW VOLUME/Dockerdata/plugins" "/media/rocky/NEW VOLUME/Dockerdata/runtimes" "/media/rocky/NEW VOLUME/Dockerdata/swarm" "/media/rocky/NEW VOLUME/Dockerdata/tmp" "/media/rocky/NEW VOLUME/Dockerdata/trust" "/media/rocky/NEW VOLUME/Dockerdata/volumes"
+>>
+>> warning: sudo chmod 777 "/media/rocky/NEW VOLUME/Dockerdata"
+>>
+sudo chmod 777 "/media/rocky/NEW VOLUME/Dockerdata/builder/*" "/media/rocky/NEW VOLUME/Dockerdata/buildkit" "/media/rocky/NEW VOLUME/Dockerdata/containers" "/media/rocky/NEW VOLUME/Dockerdata/image" "/media/rocky/NEW VOLUME/Dockerdata/network" "/media/rocky/NEW VOLUME/Dockerdata/overlay2" "/media/rocky/NEW VOLUME/Dockerdata/plugins" "/media/rocky/NEW VOLUME/Dockerdata/runtimes" "/media/rocky/NEW VOLUME/Dockerdata/swarm" "/media/rocky/NEW VOLUME/Dockerdata/tmp" "/media/rocky/NEW VOLUME/Dockerdata/trust" "/media/rocky/NEW VOLUME/Dockerdata/volumes"
+>>
+
+
+sudo rsync -aP /var/lib/docker/ "/media/rocky/NEW VOLUME/Dockerdata"
+
+*** CAUSED BY FAT32
+
+>>
+sudo rsync -aP /var/lib/docker/ "/media/rocky/New Volume/dockerdata"
+--> CÓ DẤU . terong ten file: vẫn ko đươcẹ
+
+https://dbafromthecold.com/2019/03/21/using-docker-named-volumes-to-persist-databases-in-sql-server/
